@@ -11,7 +11,14 @@ function App() {
 
   return (
     <>
-      <Card title={'Betta: Fish Fighter'} hp={'08'}/>
+      <Card 
+      title={'Betta: Fish Fighter'} 
+      hp={'08'}
+      atk={'3'}
+      def={'3'}
+      spe={'1'}
+      int={'2'}
+      />
 
     </>
   )

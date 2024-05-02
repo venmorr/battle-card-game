@@ -29,13 +29,13 @@
         .title {
             width: 66.5%;
             
-            background: yellowgreen;
+            background: orange;
         }
         
         .hp {
             width: 20%;
             
-            background: green;
+            background: orangered;
         }
 
     }
@@ -56,8 +56,47 @@
     .info {
         height: 40%;
         
-        
         background: orange;
+
+        display: flex;
+
+        .text {
+            width: 80%;
+            
+            background: orange;
+        }
+        
+        .stats {
+            width: 20%;
+
+            background: orangered;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+
+            .atk {
+                height: 20%;
+
+                background: #c71717;
+            }
+            .def {
+                height: 20%;
+
+                background: #c71717;
+            }
+            .spe {
+                height: 20%;
+                
+                background: #c71717;
+            }
+            .int {
+                height: 20%;
+                
+                background: navy;
+            }
+        }
+       
     }
 }
 

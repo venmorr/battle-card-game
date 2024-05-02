@@ -4,7 +4,7 @@ import bettaImage from '../../assets/betta-fish-fighter.jpeg'
 // css
 import styles from './Card.module.css'
 
-const Card = ({title, hp}) => {
+const Card = ({title, hp, atk, def, spe, int}) => {
 
 
 
@@ -23,7 +23,23 @@ const Card = ({title, hp}) => {
                 <div className={styles.image}>
                     <img src={bettaImage} alt="An image of Betta: Fish Fighter" />
                 </div>
-                <div className={styles.info}></div>
+                <div className={styles.info}>
+                    <div className={styles.text}> </div>
+                    <div className={styles.stats}>
+                        <div className={styles.atk}>
+                            {atk}
+                        </div>
+                        <div className={styles.def}>
+                            {def}
+                        </div>
+                        <div className={styles.spe}>
+                            {spe}
+                        </div>
+                        <div className={styles.int}>
+                            {int}
+                        </div>
+                    </div>
+                </div>
             </div>
         </>
     )
