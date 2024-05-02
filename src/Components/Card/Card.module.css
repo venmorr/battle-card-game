@@ -1,0 +1,69 @@
+:root {
+    --mobile-card-width: 80vw;
+    --desktop-card-width: 500px;
+}
+
+/* .body * {
+    outline: 1px solid black;
+} */
+
+.body {
+    height: calc(var(--desktop-card-width) * 1.36);
+    width: var(--desktop-card-width);
+    border-radius: 4px;
+
+    display: flex;
+    flex-direction: column;
+
+    .header {
+        height: 10%;
+
+        display: flex;
+
+        .type {
+            width: 13.5%;
+            
+            background: yellow;
+        }
+        
+        .title {
+            width: 66.5%;
+            
+            background: yellowgreen;
+        }
+        
+        .hp {
+            width: 20%;
+            
+            background: green;
+        }
+
+    }
+    
+    .image {
+        height: 50%;
+        
+        background: lightblue;
+
+        display: flex;
+        justify-content: right;
+
+        img {
+            height: 100%;
+        }
+    }
+    
+    .info {
+        height: 40%;
+        
+        
+        background: orange;
+    }
+}
+
+@media (max-width: 600px) {
+    .body {
+        height: calc(var(--mobile-card-width) * 1.36);
+        width: var(--mobile-card-width);
+    }
+}
