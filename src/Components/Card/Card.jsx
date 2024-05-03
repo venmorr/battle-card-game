@@ -1,10 +1,7 @@
-// imports
-import bettaImage from '../../assets/betta-fish-fighter.jpeg'
-
 // css
 import styles from './Card.module.css'
 
-const Card = ({title, hp, abilityTitle, abilitySubtitle, abilityText, atk, def, spe, int}) => {
+const Card = ({datum}) => {
 
 
 
@@ -14,35 +11,35 @@ const Card = ({title, hp, abilityTitle, abilitySubtitle, abilityText, atk, def, 
                 <div className={styles.header}>
                     <div className={styles.type}></div>
                     <div className={styles.title}>
-                        <p>{title}</p>
+                        <p>{datum.title}</p>
                     </div>
                     <div className={styles.hp}>
-                        <p>{hp}</p>
+                        <p>{datum.hp}</p>
                     </div>
                 </div>
                 <div className={styles.image}>
-                    <img src={bettaImage} alt="An image of Betta: Fish Fighter" />
+                    <img src={datum.image} alt="An image of Betta: Fish Fighter" />
                 </div>
                 <div className={styles.info}>
                     <div className={styles.text}>
                         <div className={styles.ability}>
-                            <p>{abilityTitle}</p>
-                            <p>{abilitySubtitle}</p>
+                            <p>{datum.abilityTitle}</p>
+                            <p>{datum.abilitySubtitle}</p>
                         </div>
-                        <p>{abilityText}</p>
+                        <p>{datum.abilityText}</p>
                     </div>
                     <div className={styles.stats}>
                         <div className={styles.atk}>
-                            {atk}
+                            {datum.atk}
                         </div>
                         <div className={styles.def}>
-                            {def}
+                            {datum.def}
                         </div>
                         <div className={styles.spe}>
-                            {spe}
+                            {datum.spe}
                         </div>
                         <div className={styles.int}>
-                            {int}
+                            {datum.int}
                         </div>
                     </div>
                 </div>

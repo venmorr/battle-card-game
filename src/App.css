@@ -5,6 +5,18 @@
   text-align: center;
 }
 
+ul {
+  gap: 2.5rem;
+  display: flex;
+  flex-direction: column;
+
+  padding: 0;
+
+  li {
+    list-style: none;
+  }
+}
+
 .spacer {
   height: 10px;
 }

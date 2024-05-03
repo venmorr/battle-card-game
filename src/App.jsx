@@ -14,7 +14,17 @@ function App() {
 
   return (
     <>
-      
+      <div>
+        <ul>
+          {cardData.map(cardDatum => {
+            return (
+              <li key={cardDatum.title}>
+                <Card datum={cardDatum} />
+              </li>
+            )
+          })}
+        </ul>
+      </div>
     </>
   )
 }
