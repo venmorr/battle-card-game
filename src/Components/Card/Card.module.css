@@ -3,9 +3,9 @@
     --desktop-card-width: 500px;
 }
 
-/* .body * {
+.body * {
     outline: 1px solid black;
-} */
+}
 
 .body {
     height: calc(var(--desktop-card-width) * 1.36);
@@ -57,13 +57,41 @@
         height: 40%;
         
         background: orange;
-
+        
         display: flex;
-
+        
         .text {
             width: 80%;
             
             background: orange;
+        }
+        
+        .text {
+            height: 100%;
+
+            font-size: 12px;
+            
+            background: blue;
+            border: 2px solid red;
+
+            display: flex;
+            flex-direction: column;
+
+            .ability {
+                height: 10%;
+
+                background: skyblue;
+
+                display: flex;
+                align-items: center;
+
+                p {
+                    height: 100%;
+
+                    margin-right: 5px;
+                }
+            }
+
         }
         
         .stats {
