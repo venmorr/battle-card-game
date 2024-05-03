@@ -3,9 +3,9 @@
     --desktop-card-width: 500px;
 }
 
-.body * {
+/* .body * {
     outline: 1px solid black;
-}
+} */
 
 .body {
     height: calc(var(--desktop-card-width) * 1.36);
@@ -43,10 +43,10 @@
     .image {
         height: 50%;
         
-        background: lightblue;
+        background: whitesmoke;
 
         display: flex;
-        justify-content: right;
+        justify-content: center;
 
         img {
             height: 100%;
@@ -72,7 +72,7 @@
             font-size: 12px;
             
             background: blue;
-            border: 2px solid red;
+            /* border: 2px solid red; */
 
             display: flex;
             flex-direction: column;
